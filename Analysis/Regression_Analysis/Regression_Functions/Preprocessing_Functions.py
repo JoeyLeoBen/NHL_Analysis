@@ -39,6 +39,8 @@ class Preprocessing:
         describe = X_num.describe().T
         display(describe)
 
+        return None
+
     @staticmethod
     def cat_univariate_freq(
         df: pd.DataFrame,
@@ -74,6 +76,8 @@ class Preprocessing:
             plt.ylabel(X)
             plt.show()
 
+        return None
+
     @staticmethod
     def target_univariate_scatter(
         df: pd.DataFrame, x: str, y: str, length: int, width: int, font: int
@@ -100,6 +104,8 @@ class Preprocessing:
         plt.xlabel(x)
         plt.ylabel(y)
         plt.show()
+
+        return None
 
     @staticmethod
     def num_bivariate_scatter(
@@ -132,6 +138,8 @@ class Preprocessing:
         )
         plot.fig.set_size_inches(width, length)
         plt.show()
+
+        return None
 
     @staticmethod
     def num_bivariate_corr_target(
@@ -179,6 +187,7 @@ class Preprocessing:
             for mark in markdown:
                 print(mark)
         print("\nfeatures to remove:")
+
         return feature_list
 
     @staticmethod
@@ -226,6 +235,8 @@ class Preprocessing:
             label = label.sort_values(by=[target], ascending=False)
             display(label)
 
+        return None
+
     @staticmethod
     def remove_outliers(df: pd.DataFrame, col: str) -> tuple[str, float, str, float]:
         """
@@ -244,6 +255,7 @@ class Preprocessing:
         iqr = (p_75 - p_25) * 1.5
         low_outliers = p_25 - iqr
         high_outliers = p_75 + iqr
+
         return ("low end outliers:", low_outliers, "high end outliers", high_outliers)
 
     @staticmethod
@@ -285,6 +297,8 @@ class Preprocessing:
             plt.show()
             label3 = label3.sort_values(by=["rate"], ascending=False)
             display(label3)
+
+        return None
 
     @staticmethod
     def calculate_vif(
@@ -349,6 +363,7 @@ class Preprocessing:
         if print_markdown.lower() == "yes":
             for mark in markdown:
                 print(mark)
+
         return (feature_list, feature_vif_list)
 
     @staticmethod
@@ -407,6 +422,7 @@ class Preprocessing:
                 col_names_list.append(("", col))
         crosstab.columns = pd.MultiIndex.from_tuples(col_names_list)
         crosstab["."] = ""
+
         return crosstab
 
     @staticmethod
@@ -434,4 +450,5 @@ class Preprocessing:
             final_crosstab = pd.concat(crosstab_list, axis=0)
             final_crosstab_list.append(final_crosstab)
         final_df = pd.concat(final_crosstab_list, axis=1).reset_index(drop=True)
+        
         return final_df

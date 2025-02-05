@@ -40,6 +40,8 @@ class Metrics:
         for label, value in results:
             print(f"{label:{35}} {value:.>{20}}")
 
+        return None
+
     @staticmethod
     def regression_cross_val_shuffle(
         regressor: any, X_train: pd.DataFrame, y_train: pd.Series, cv: any, font: int
@@ -185,6 +187,8 @@ class Metrics:
             print(f"{label:{50}} {value:.>{20}}")
         print("\n")
 
+        return None
+
     @staticmethod
     def regression_cross_val_splits(
         regressor: any, X_train: pd.DataFrame, y_train: pd.Series, cv: int, font: int
@@ -322,6 +326,8 @@ class Metrics:
             print(f"{label:{50}} {value:.>{20}}")
         print("\n")
 
+        return None
+
     @staticmethod
     def regression_feature_importance(
         model: any,
@@ -384,6 +390,8 @@ class Metrics:
             columns=["coef2", "index"], errors="ignore"
         )
         display(coefficients_df)
+
+        return None
 
     @staticmethod
     def residual_means_counts_plot(
@@ -475,6 +483,8 @@ class Metrics:
         )
         plt.show()
 
+        return None
+
     @staticmethod
     def class_cat_bivariate(
         df: pd.DataFrame,
@@ -514,6 +524,8 @@ class Metrics:
             plt.show()
             label3 = label3.sort_values(by=["rate"], ascending=False)
             display(label3)
+
+        return None
 
     @staticmethod
     def calculate_vif(
@@ -575,6 +587,7 @@ class Metrics:
         if print_markdown.lower() == "yes":
             for mark in markdown:
                 print(mark)
+                
         return (feature_list, feature_vif_list)
 
     @staticmethod
@@ -626,6 +639,7 @@ class Metrics:
                 col_names_list.append(("", col))
         crosstab.columns = pd.MultiIndex.from_tuples(col_names_list)
         crosstab["."] = ""
+
         return crosstab
 
     @staticmethod
@@ -653,4 +667,5 @@ class Metrics:
             final_crosstab = pd.concat(crosstab_list, axis=0)
             final_crosstab_list.append(final_crosstab)
         final_df = pd.concat(final_crosstab_list, axis=1).reset_index(drop=True)
+
         return final_df
