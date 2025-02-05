@@ -1,0 +1,477 @@
+version: 2
+
+# Macro to generate yaml: 
+# dbt run-operation generate_model_yaml --args '{"model_names": ["raw_game_type","raw_season","raw_teams","raw_season_stats]}'
+models:
+  - name: raw_game_type
+    description: Game type classifications used in the dataset.
+    columns:
+      - name: game_type_id
+        description: Unique identifier for each game type.
+        tests:
+          - unique
+          - not_null
+
+      - name: game_type
+        description: Descriptive name of the game type.
+        tests:
+          - unique
+          - not_null
+
+  - name: raw_season
+    description: Season information for the games.
+    columns:
+      - name: season_id
+        description: Unique identifier for each season.
+        tests:
+          - unique
+          - not_null
+
+      - name: season
+        description: The season year or range (e.g., 2023-2024).
+        tests:
+          - unique
+          - not_null
+
+  - name: raw_teams
+    description: Information about the teams participating in the games.
+    columns:
+      - name: team_id
+        description: Unique identifier for each team.
+        tests:
+          - unique
+          - not_null
+
+      - name: team_full_name
+        description: Full official name of the team.
+        tests:
+          - unique
+          - not_null
+
+  - name: raw_season_stats
+    description: Seasonal statistics for each team.
+    columns:
+      - name: season_id
+        description: Identifier linking to the specific season.
+        tests:
+          - not_null
+
+      - name: game_type_id
+        description: Identifier linking to the specific game type.
+        tests:
+          - not_null
+
+      - name: team_id
+        description: Identifier linking to the specific team.
+        tests:
+          - not_null
+
+      - name: faceoff_win_pct
+        description: Percentage of faceoffs won by the team.
+        tests:
+          - not_null
+
+      - name: games_played
+        description: Total number of games played in the season.
+        tests:
+          - not_null
+
+      - name: goals_against
+        description: Total number of goals conceded by the team.
+        tests:
+          - not_null
+
+      - name: goals_against_per_game
+        description: Average goals conceded per game.
+        tests:
+          - not_null
+
+      - name: goals_for
+        description: Total number of goals scored by the team.
+        tests:
+          - not_null
+
+      - name: goals_for_per_game
+        description: Average goals scored per game.
+        tests:
+          - not_null
+
+      - name: losses
+        description: Total number of games lost.
+        tests:
+          - not_null
+
+      - name: overtime_losses
+        description: Total number of overtime losses.
+        tests:
+          - not_null
+
+      - name: penalty_kill_net_pct
+        description: Net penalty kill percentage.
+        tests:
+          - not_null
+
+      - name: penalty_kill_pct
+        description: Penalty kill percentage.
+        tests:
+          - not_null
+
+      - name: points_pct
+        description: Percentage of possible points earned.
+        tests:
+          - not_null
+
+      - name: points
+        description: Total points earned in the season.
+        tests:
+          - not_null
+
+      - name: power_play_net_pct
+        description: Net power play percentage.
+        tests:
+          - not_null
+
+      - name: power_play_pct
+        description: Power play percentage.
+        tests:
+          - not_null
+
+      - name: regulation_and_overtime_wins
+        description: Total number of wins in regulation and overtime.
+        tests:
+          - not_null
+
+      - name: shots_against_per_game
+        description: Average number of shots against per game.
+        tests:
+          - not_null
+
+      - name: shots_for_per_game
+        description: Average number of shots for per game.
+        tests:
+          - not_null
+
+      - name: ties
+        description: Total number of tied games.
+        tests:
+          - not_null
+
+      - name: wins
+        description: Total number of games won.
+        tests:
+          - not_null
+
+      - name: wins_in_regulation
+        description: Number of wins achieved in regulation time.
+        tests:
+          - not_null
+
+      - name: wins_in_shootout
+        description: Number of wins achieved in shootouts.
+        tests:
+          - not_null
+
+      - name: time_on_ice
+        description: Total time on ice for the team.
+        tests:
+          - not_null
+
+      - name: corsi_for
+        description: Corsi For statistic representing shot attempts for.
+        tests:
+          - not_null
+
+      - name: corsi_against
+        description: Corsi Against statistic representing shot attempts against.
+        tests:
+          - not_null
+
+      - name: corsi_for_pct
+        description: Percentage of Corsi For out of total Corsi attempts.
+        tests:
+          - not_null
+
+      - name: fenwick_for
+        description: Fenwick For statistic representing unblocked shot attempts for.
+        tests:
+          - not_null
+
+      - name: fenwick_against
+        description: Fenwick Against statistic representing unblocked shot attempts against.
+        tests:
+          - not_null
+
+      - name: fenwick_for_pct
+        description: Percentage of Fenwick For out of total Fenwick attempts.
+        tests:
+          - not_null
+
+      - name: shots_for
+        description: Total number of shots taken by the team.
+        tests:
+          - not_null
+
+      - name: shots_against
+        description: Total number of shots taken against the team.
+        tests:
+          - not_null
+
+      - name: shots_for_pct
+        description: Percentage of shots taken for out of total shots.
+        tests:
+          - not_null
+
+      - name: goals_for_pct
+        description: Percentage of goals scored out of total goals.
+        tests:
+          - not_null
+
+      - name: expected_goals_for
+        description: Expected number of goals the team should score based on shot quality.
+        tests:
+          - not_null
+
+      - name: expected_goals_against
+        description: Expected number of goals the team should concede based on shot quality.
+        tests:
+          - not_null
+
+      - name: expected_goals_for_pct
+        description: Percentage of expected goals for out of total expected goals.
+        tests:
+          - not_null
+
+      - name: scoring_chances_for
+        description: Number of scoring chances created by the team.
+        tests:
+          - not_null
+
+      - name: scoring_chances_against
+        description: Number of scoring chances against the team.
+        tests:
+          - not_null
+
+      - name: scoring_chances_for_pct
+        description: Percentage of scoring chances for out of total scoring chances.
+        tests:
+          - not_null
+
+      - name: scoring_chances_shots_for
+        description: Shots generated from scoring chances for.
+        tests:
+          - not_null
+
+      - name: scoring_chances_shots_against
+        description: Shots generated from scoring chances against.
+        tests:
+          - not_null
+
+      - name: scoring_chances_shots_for_pct
+        description: Percentage of scoring chance shots for out of total scoring chance shots.
+        tests:
+          - not_null
+
+      - name: scoring_chances_goals_for
+        description: Goals scored from scoring chances for.
+        tests:
+          - not_null
+
+      - name: scoring_chances_goals_against
+        description: Goals conceded from scoring chances against.
+        tests:
+          - not_null
+
+      - name: scoring_chances_goals_for_pct
+        description: Percentage of goals for from scoring chances out of total scoring chance goals.
+        tests:
+          - not_null
+
+      - name: scoring_chances_shooting_pct
+        description: Shooting percentage from scoring chances.
+        tests:
+          - not_null
+
+      - name: scoring_chances_save_pct
+        description: Save percentage against scoring chances.
+        tests:
+          - not_null
+
+      - name: high_danger_chances_for
+        description: High danger scoring chances created by the team.
+        tests:
+          - not_null
+
+      - name: high_danger_chances_against
+        description: High danger scoring chances against the team.
+        tests:
+          - not_null
+
+      - name: high_danger_chances_for_pct
+        description: Percentage of high danger chances for out of total high danger chances.
+        tests:
+          - not_null
+
+      - name: high_danger_shots_for
+        description: Shots generated from high danger chances for.
+        tests:
+          - not_null
+
+      - name: high_danger_shots_against
+        description: Shots generated from high danger chances against.
+        tests:
+          - not_null
+
+      - name: high_danger_shots_for_pct
+        description: Percentage of high danger shots for out of total high danger shots.
+        tests:
+          - not_null
+
+      - name: high_danger_goals_for
+        description: Goals scored from high danger chances for.
+        tests:
+          - not_null
+
+      - name: high_danger_goals_against
+        description: Goals conceded from high danger chances against.
+        tests:
+          - not_null
+
+      - name: high_danger_goals_for_pct
+        description: Percentage of high danger goals for out of total high danger goals.
+        tests:
+          - not_null
+
+      - name: high_danger_shooting_pct
+        description: Shooting percentage from high danger chances.
+        tests:
+          - not_null
+
+      - name: high_danger_save_pct
+        description: Save percentage against high danger chances.
+        tests:
+          - not_null
+
+      - name: medium_danger_chances_for
+        description: Medium danger scoring chances created by the team.
+        tests:
+          - not_null
+
+      - name: medium_danger_chances_against
+        description: Medium danger scoring chances against the team.
+        tests:
+          - not_null
+
+      - name: medium_danger_chances_for_pct
+        description: Percentage of medium danger chances for out of total medium danger chances.
+        tests:
+          - not_null
+
+      - name: medium_danger_shots_for
+        description: Shots generated from medium danger chances for.
+        tests:
+          - not_null
+
+      - name: medium_danger_shots_against
+        description: Shots generated from medium danger chances against.
+        tests:
+          - not_null
+
+      - name: medium_danger_shots_for_pct
+        description: Percentage of medium danger shots for out of total medium danger shots.
+        tests:
+          - not_null
+
+      - name: medium_danger_goals_for
+        description: Goals scored from medium danger chances for.
+        tests:
+          - not_null
+
+      - name: medium_danger_goals_against
+        description: Goals conceded from medium danger chances against.
+        tests:
+          - not_null
+
+      - name: medium_danger_goals_for_pct
+        description: Percentage of medium danger goals for out of total medium danger goals.
+        tests:
+          - not_null
+
+      - name: medium_danger_shooting_pct
+        description: Shooting percentage from medium danger chances.
+        tests:
+          - not_null
+
+      - name: medium_danger_save_pct
+        description: Save percentage against medium danger chances.
+        tests:
+          - not_null
+
+      - name: low_danger_chances_for
+        description: Low danger scoring chances created by the team.
+        tests:
+          - not_null
+
+      - name: low_danger_chances_against
+        description: Low danger scoring chances against the team.
+        tests:
+          - not_null
+
+      - name: low_danger_chances_for_pct
+        description: Percentage of low danger chances for out of total low danger chances.
+        tests:
+          - not_null
+
+      - name: low_danger_shots_for
+        description: Shots generated from low danger chances for.
+        tests:
+          - not_null
+
+      - name: low_danger_shots_against
+        description: Shots generated from low danger chances against.
+        tests:
+          - not_null
+
+      - name: low_danger_shots_for_pct
+        description: Percentage of low danger shots for out of total low danger shots.
+        tests:
+          - not_null
+
+      - name: low_danger_goals_for
+        description: Goals scored from low danger chances for.
+        tests:
+          - not_null
+
+      - name: low_danger_goals_against
+        description: Goals conceded from low danger chances against.
+        tests:
+          - not_null
+
+      - name: low_danger_goals_for_pct
+        description: Percentage of low danger goals for out of total low danger goals.
+        tests:
+          - not_null
+
+      - name: low_danger_shooting_pct
+        description: Shooting percentage from low danger chances.
+        tests:
+          - not_null
+
+      - name: low_danger_save_pct
+        description: Save percentage against low danger chances.
+        tests:
+          - not_null
+
+      - name: shooting_pct
+        description: Overall team shooting percentage.
+        tests:
+          - not_null
+
+      - name: save_pct
+        description: Overall team save percentage.
+        tests:
+          - not_null
+
+      - name: pdo_rating
+        description: PDO rating, a measure of team luck combining shooting and save percentages.
+        tests:
+          - not_null

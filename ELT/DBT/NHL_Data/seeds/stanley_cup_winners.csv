@@ -1,0 +1,108 @@
+season_id,start_year,winning_team_id,winning_team,losing_team_id,losing_team
+19171918,1917,57,Toronto Arenas,8,Montreal Canadiens
+19181919,1918,,Spanish Flu,,
+19191920,1919,9,Ottawa Senators,58,Toronto St. Patricks
+19201921,1920,9,Ottawa Senators,58,Toronto St. Patricks
+19211922,1921,58,Toronto St. Patricks,9,Ottawa Senators
+19221923,1922,9,Ottawa Senators,22,Edmonton Oilers
+19231924,1923,8,Montreal Canadiens,20,Calgary Flames
+19241925,1924,8,Montreal Canadiens,58,Toronto St. Patricks
+19251926,1925,43,Montreal Maroons,58,Toronto St. Patricks
+19261927,1926,9,Ottawa Senators,6,Boston Bruins
+19271928,1927,3,New York Rangers,43,Montreal Maroons
+19281929,1928,6,Boston Bruins,3,New York Rangers
+19291930,1929,8,Montreal Canadiens,6,Boston Bruins
+19301931,1930,8,Montreal Canadiens,16,Chicago Blackhawks
+19311932,1931,10,Toronto Maple Leafs,3,New York Rangers
+19321933,1932,3,New York Rangers,10,Toronto Maple Leafs
+19331934,1933,16,Chicago Blackhawks,17,Detroit Red Wings
+19341935,1934,43,Montreal Maroons,10,Toronto Maple Leafs
+19351936,1935,17,Detroit Red Wings,10,Toronto Maple Leafs
+19361937,1936,17,Detroit Red Wings,3,New York Rangers
+19371938,1937,16,Chicago Blackhawks,10,Toronto Maple Leafs
+19381939,1938,6,Boston Bruins,10,Toronto Maple Leafs
+19391940,1939,3,New York Rangers,10,Toronto Maple Leafs
+19401941,1940,6,Boston Bruins,17,Detroit Red Wings
+19411942,1941,10,Toronto Maple Leafs,17,Detroit Red Wings
+19421943,1942,17,Detroit Red Wings,6,Boston Bruins
+19431944,1943,8,Montreal Canadiens,16,Chicago Blackhawks
+19441945,1944,10,Toronto Maple Leafs,17,Detroit Red Wings
+19451946,1945,8,Montreal Canadiens,6,Boston Bruins
+19461947,1946,10,Toronto Maple Leafs,8,Montreal Canadiens
+19471948,1947,10,Toronto Maple Leafs,17,Detroit Red Wings
+19481949,1948,10,Toronto Maple Leafs,17,Detroit Red Wings
+19491950,1949,17,Detroit Red Wings,3,New York Rangers
+19501951,1950,10,Toronto Maple Leafs,8,Montreal Canadiens
+19511952,1951,17,Detroit Red Wings,8,Montreal Canadiens
+19521953,1952,8,Montreal Canadiens,6,Boston Bruins
+19531954,1953,17,Detroit Red Wings,8,Montreal Canadiens
+19541955,1954,17,Detroit Red Wings,8,Montreal Canadiens
+19551956,1955,8,Montreal Canadiens,17,Detroit Red Wings
+19561957,1956,8,Montreal Canadiens,6,Boston Bruins
+19571958,1957,8,Montreal Canadiens,6,Boston Bruins
+19581959,1958,8,Montreal Canadiens,10,Toronto Maple Leafs
+19591960,1959,8,Montreal Canadiens,10,Toronto Maple Leafs
+19601961,1960,16,Chicago Blackhawks,17,Detroit Red Wings
+19611962,1961,10,Toronto Maple Leafs,16,Chicago Blackhawks
+19621963,1962,10,Toronto Maple Leafs,17,Detroit Red Wings
+19631964,1963,10,Toronto Maple Leafs,17,Detroit Red Wings
+19641965,1964,8,Montreal Canadiens,16,Chicago Blackhawks
+19651966,1965,8,Montreal Canadiens,17,Detroit Red Wings
+19661967,1966,10,Toronto Maple Leafs,8,Montreal Canadiens
+19671968,1967,8,Montreal Canadiens,19,St. Louis Blues
+19681969,1968,8,Montreal Canadiens,19,St. Louis Blues
+19691970,1969,6,Boston Bruins,19,St. Louis Blues
+19701971,1970,8,Montreal Canadiens,16,Chicago Blackhawks
+19711972,1971,6,Boston Bruins,3,New York Rangers
+19721973,1972,8,Montreal Canadiens,16,Chicago Blackhawks
+19731974,1973,4,Philadelphia Flyers,6,Boston Bruins
+19741975,1974,4,Philadelphia Flyers,7,Buffalo Sabres
+19751976,1975,8,Montreal Canadiens,4,Philadelphia Flyers
+19761977,1976,8,Montreal Canadiens,6,Boston Bruins
+19771978,1977,8,Montreal Canadiens,6,Boston Bruins
+19781979,1978,8,Montreal Canadiens,3,New York Rangers
+19791980,1979,2,New York Islanders,4,Philadelphia Flyers
+19801981,1980,2,New York Islanders,31,Minnesota North Stars
+19811982,1981,2,New York Islanders,23,Vancouver Canucks
+19821983,1982,2,New York Islanders,22,Edmonton Oilers
+19831984,1983,22,Edmonton Oilers,2,New York Islanders
+19841985,1984,22,Edmonton Oilers,4,Philadelphia Flyers
+19851986,1985,8,Montreal Canadiens,20,Calgary Flames
+19861987,1986,22,Edmonton Oilers,4,Philadelphia Flyers
+19871988,1987,22,Edmonton Oilers,6,Boston Bruins
+19881989,1988,20,Calgary Flames,8,Montreal Canadiens
+19891990,1989,22,Edmonton Oilers,6,Boston Bruins
+19901991,1990,5,Pittsburgh Penguins,31,Minnesota North Stars
+19911992,1991,5,Pittsburgh Penguins,16,Chicago Blackhawks
+19921993,1992,8,Montreal Canadiens,26,Los Angeles Kings
+19931994,1993,3,New York Rangers,23,Vancouver Canucks
+19941995,1994,1,New Jersey Devils,17,Detroit Red Wings
+19951996,1995,21,Colorado Avalanche,13,Florida Panthers
+19961997,1996,17,Detroit Red Wings,4,Philadelphia Flyers
+19971998,1997,17,Detroit Red Wings,15,Washington Capitals
+19981999,1998,25,Dallas Stars,7,Buffalo Sabres
+19992000,1999,1,New Jersey Devils,25,Dallas Stars
+20002001,2000,21,Colorado Avalanche,1,New Jersey Devils
+20012002,2001,17,Detroit Red Wings,12,Carolina Hurricanes
+20022003,2002,1,New Jersey Devils,24,Anaheim Ducks
+20032004,2003,14,Tampa Bay Lightning,20,Calgary Flames
+20042005,2004,,Canceled Due To Labour Dispute,,
+20052006,2005,12,Carolina Hurricanes,22,Edmonton Oilers
+20062007,2006,24,Anaheim Ducks,9,Ottawa Senators
+20072008,2007,17,Detroit Red Wings,5,Pittsburgh Penguins
+20082009,2008,5,Pittsburgh Penguins,17,Detroit Red Wings
+20092010,2009,16,Chicago Blackhawks,4,Philadelphia Flyers
+20102011,2010,6,Boston Bruins,23,Vancouver Canucks
+20112012,2011,26,Los Angeles Kings,1,New Jersey Devils
+20122013,2012,16,Chicago Blackhawks,6,Boston Bruins
+20132014,2013,26,Los Angeles Kings,3,New York Rangers
+20142015,2014,16,Chicago Blackhawks,14,Tampa Bay Lightning
+20152016,2015,5,Pittsburgh Penguins,28,San Jose Sharks
+20162017,2016,5,Pittsburgh Penguins,18,Nashville Predators
+20172018,2017,15,Washington Capitals,54,Vegas Golden Knights
+20182019,2018,19,St. Louis Blues,6,Boston Bruins
+20192020,2019,14,Tampa Bay Lightning,25,Dallas Stars
+20202021,2020,14,Tampa Bay Lightning,8,Montreal Canadiens
+20212022,2021,21,Colorado Avalanche,14,Tampa Bay Lightning
+20222023,2022,54,Vegas Golden Knights,13,Florida Panthers
+20232024,2023,13,Florida Panthers,22,Edmonton Oilers

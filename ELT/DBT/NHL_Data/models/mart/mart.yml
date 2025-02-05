@@ -1,0 +1,119 @@
+version: 2
+
+# Macro to generate yaml: 
+# dbt run-operation generate_model_yaml --args '{"model_names": ["losses_3_year_rolling_variance","team_improvement_regular_season","wins_3_year_rolling_variance"]}'
+models:
+models:
+  - name: losses_3_year_rolling_variance
+    description: Calculates the variance in the number of losses over a three-year rolling period for each team.
+    columns:
+      - name: team_id
+        description: Unique identifier for each team.
+        tests:
+          - not_null
+
+      - name: game_type_id
+        description: Identifier linking to the specific game type.
+        tests:
+          - not_null
+
+      - name: start_year
+        description: The starting year of the three-year rolling period.
+        tests:
+          - not_null
+
+      - name: losses
+        description: Total number of losses in the season.
+        tests:
+          - not_null
+
+      - name: three_year_rolling_avg_losses
+        description: Average number of losses over the past three years.
+        tests:
+          - not_null
+
+      - name: three_year_rolling_season_avg_losses
+        description: Seasonal average of losses over the past three years.
+        tests:
+          - not_null
+
+      - name: three_year_rolling_losses_variance
+        description: Variance in the number of losses over the three-year rolling period.
+        tests:
+          - not_null
+
+  - name: team_improvement_regular_season
+    description: Tracks the improvement metrics of teams during the regular season.
+    columns:
+      - name: start_year
+        description: The starting year for tracking team improvement.
+        tests:
+          - not_null
+
+      - name: season_id
+        description: Unique identifier for each season.
+        tests:
+          - not_null
+
+      - name: team_full_name
+        description: Full official name of the team.
+        tests:
+          - not_null
+
+      - name: team_id
+        description: Unique identifier for each team.
+        tests:
+          - not_null
+
+      - name: game_type
+        description: Descriptive name of the game type.
+        tests:
+          - not_null
+
+      - name: game_type_id
+        description: Identifier linking to the specific game type.
+        tests:
+          - not_null
+
+      - name: team_improvement
+        description: Metric representing the improvement of the team compared to previous seasons.
+        tests:
+          - not_null
+
+  - name: wins_3_year_rolling_variance
+    description: Calculates the variance in the number of wins over a three-year rolling period for each team.
+    columns:
+      - name: team_id
+        description: Unique identifier for each team.
+        tests:
+          - not_null
+
+      - name: game_type_id
+        description: Identifier linking to the specific game type.
+        tests:
+          - not_null
+
+      - name: start_year
+        description: The starting year of the three-year rolling period.
+        tests:
+          - not_null
+
+      - name: wins
+        description: Total number of wins in the season.
+        tests:
+          - not_null
+
+      - name: three_year_rolling_avg_wins
+        description: Average number of wins over the past three years.
+        tests:
+          - not_null
+
+      - name: three_year_rolling_season_avg_wins
+        description: Seasonal average of wins over the past three years.
+        tests:
+          - not_null
+
+      - name: three_year_rolling_wins_variance
+        description: Variance in the number of wins over the three-year rolling period.
+        tests:
+          - not_null

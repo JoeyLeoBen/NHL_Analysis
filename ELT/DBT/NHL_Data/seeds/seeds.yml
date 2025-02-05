@@ -1,0 +1,36 @@
+version: 2
+
+seeds:
+  - name: stanley_cup_winners
+    description: shows all teams who won the Stanley Cup and the runner-up team
+    columns:
+
+      - name: season_id 
+        description: unique id per season
+        tests:
+          - unique
+          - not_null
+
+      - name: start_year
+        description: start year of that season
+        tests:
+          - unique
+          - not_null
+
+      - name: winning_team_id
+        description: the team id of the team who the Stanley Cup
+        tests: []
+
+      - name: winning_team
+        description: the full team name of the team who the Stanley Cup
+        tests:
+        # - unique
+        - not_null
+
+      - name: losing_team_id
+        description: the team id of the team who lost Stanley Cup in the final series
+        tests: []
+
+      - name: losing_team
+        description: the full team name of the team who lost Stanley Cup in the final series
+        tests: []
