@@ -40,6 +40,7 @@ class Preprocessing:
         display(describe)
 
         return None
+    
 
     @staticmethod
     def cat_univariate_freq(
@@ -77,6 +78,7 @@ class Preprocessing:
             plt.show()
 
         return None
+    
 
     @staticmethod
     def target_univariate_scatter(
@@ -106,6 +108,7 @@ class Preprocessing:
         plt.show()
 
         return None
+    
 
     @staticmethod
     def num_bivariate_scatter(
@@ -140,6 +143,7 @@ class Preprocessing:
         plt.show()
 
         return None
+    
 
     @staticmethod
     def num_bivariate_corr_target(
@@ -175,7 +179,6 @@ class Preprocessing:
         sns.heatmap(X_corr, annot=True)
         plt.title("correlation matrix")
         plt.show()
-        display(X_corr)
 
         X_corr = X_corr.reset_index()
         X_corr[target] = abs(X_corr[target])
@@ -189,6 +192,7 @@ class Preprocessing:
         print("\nfeatures to remove:")
 
         return feature_list
+    
 
     @staticmethod
     def cat_bivariate_avg_target(
@@ -236,6 +240,7 @@ class Preprocessing:
             display(label)
 
         return None
+    
 
     @staticmethod
     def remove_outliers(df: pd.DataFrame, col: str) -> tuple[str, float, str, float]:
@@ -257,6 +262,7 @@ class Preprocessing:
         high_outliers = p_75 + iqr
 
         return ("low end outliers:", low_outliers, "high end outliers", high_outliers)
+    
 
     @staticmethod
     def class_cat_bivariate(
@@ -299,6 +305,7 @@ class Preprocessing:
             display(label3)
 
         return None
+    
 
     @staticmethod
     def calculate_vif(
@@ -365,6 +372,7 @@ class Preprocessing:
                 print(mark)
 
         return (feature_list, feature_vif_list)
+    
 
     @staticmethod
     def crosstabs(col_left: str, col_top: str, df: pd.DataFrame) -> pd.DataFrame:
@@ -424,6 +432,7 @@ class Preprocessing:
         crosstab["."] = ""
 
         return crosstab
+    
 
     @staticmethod
     def crosstab_report(df: pd.DataFrame, drop_cols: list[str]) -> pd.DataFrame:

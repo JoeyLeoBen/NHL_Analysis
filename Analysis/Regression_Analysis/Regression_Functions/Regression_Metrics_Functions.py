@@ -41,6 +41,7 @@ class Metrics:
             print(f"{label:{35}} {value:.>{20}}")
 
         return None
+    
 
     @staticmethod
     def regression_cross_val_shuffle(
@@ -188,6 +189,7 @@ class Metrics:
         print("\n")
 
         return None
+    
 
     @staticmethod
     def regression_cross_val_splits(
@@ -327,6 +329,7 @@ class Metrics:
         print("\n")
 
         return None
+    
 
     @staticmethod
     def regression_feature_importance(
@@ -392,6 +395,7 @@ class Metrics:
         display(coefficients_df)
 
         return None
+    
 
     @staticmethod
     def residual_means_counts_plot(
@@ -484,6 +488,7 @@ class Metrics:
         plt.show()
 
         return None
+    
 
     @staticmethod
     def class_cat_bivariate(
@@ -526,6 +531,7 @@ class Metrics:
             display(label3)
 
         return None
+    
 
     @staticmethod
     def calculate_vif(
@@ -589,6 +595,7 @@ class Metrics:
                 print(mark)
                 
         return (feature_list, feature_vif_list)
+    
 
     @staticmethod
     def crosstabs(col_left: str, col_top: str, df: pd.DataFrame) -> pd.DataFrame:
@@ -641,6 +648,7 @@ class Metrics:
         crosstab["."] = ""
 
         return crosstab
+    
 
     @staticmethod
     def crosstab_report(df: pd.DataFrame, drop_cols: list[str]) -> pd.DataFrame:
