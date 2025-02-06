@@ -27,7 +27,7 @@ This project was developed for [Maskin Hockey](https://maskinhockey.ca/), a hock
 
 ## **Data Structure & Initial Checks**
 
-- **Database Documentation, Lineage Graph, Data Quality Checks, and SQL Queries:** [View Here](https://nhl-db-team-season-stats.netlify.app/#!/overview)  
+- **Database Documentation, Lineage Graph, Data Quality Checks, and SQL Queries:** [View Here](https://nhl-db-documentation.netlify.app/#!/overview)  
 - **ETL Pipeline:** [View Here](./ETL/)  
 - **ELT Pipeline:** [View Here](/ELT/DBT/NHL_Data/)  
 
