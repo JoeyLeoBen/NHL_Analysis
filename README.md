@@ -30,7 +30,7 @@ This analysis is designed for coaches in the GTA junior hockey community, partic
 
 # Project Work Flow
 
-![Alt Text](./ReadMe_Images/wf.png)
+![Alt Text](./ReadMe_Images/wf.jpg)
 
 # Executive Summary
 
