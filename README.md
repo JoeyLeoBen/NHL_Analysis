@@ -1,9 +1,13 @@
+# **Predicting NHL Regular Season Wins**
 
-# Predicting NHL Regular Season Wins
+## **Overview**
+This project leverages multiple linear regression to predict NHL regular season wins based on team metrics collected from 2007 to 2023. The goal is to identify the key performance indicators that contribute most significantly to winning games throughout the regular season. 
 
-This project uses multiple linear regression to predict NHL regular season wins based on team metrics collected from 2007 to 2023. The analysis seeks to discover metrics that are more likely to secure more wins through out the regular seaosn. Drawing from data sourced via the [NHL API](https://github.com/Zmalski/NHL-API-Reference) and webscraping [naturalstattrick.com](https://www.naturalstattrick.com/glossary.php?teams#), the project not only identifies key predictors of success but also offers actionable insights, especially for junior hockey coaches seeking data-driven strategies to enhance team performance.
+By analyzing data sourced via the [NHL API](https://github.com/Zmalski/NHL-API-Reference) and web scraping from [naturalstattrick.com](https://www.naturalstattrick.com/glossary.php?teams#), this project not only highlights the strongest predictors of success but also provides actionable insights—particularly for junior hockey coaches looking to implement data-driven strategies to enhance team performance.
 
-# Table of Contents
+---
+
+## **Table of Contents**
 - [Project Background](#project-background)
 - [Data Structure & Initial Checks](#data-structure--initial-checks)
 - [Project Workflow](#project-workflow)
@@ -12,131 +16,143 @@ This project uses multiple linear regression to predict NHL regular season wins 
 - [Recommendations](#recommendations)
 - [Assumptions and Caveats](#assumptions-and-caveats)
 
-# Project Background
-This analysis is designed for coaches in the GTA junior hockey community, particularly those working with players aged 10 to 16. It provides actionable insights into improving regular season performance by identifying the key metrics that drive win productivity. By leveraging these insights, coaches and instructors can refine their training and game strategies to optimize team success. This project was developed for [Maskin Hockey](https://maskinhockey.ca/), hockey program dedicated to junior coaching and player development at a high level.
+---
 
-# Data Structure & Initial Checks
+## **Project Background**
+This analysis is tailored for coaches in the GTA junior hockey community, particularly those working with players aged 10 to 16. It provides insights into improving regular season performance by identifying key metrics that drive winning outcomes. By leveraging these findings, coaches and instructors can refine their training methodologies and in-game strategies to optimize team success.
 
-- The nhldb database documentation, database lineage graph, data quality checks, and SQL queries can viewed here [Link](https://nhl-db-team-season-stats.netlify.app/#!/overview)
-- ETL Pipline can be viewed here [Link](./ETL/)
-- ELT Pipline can be viewed here [Link](/ELT/DBT/NHL_Data/)
-
-# Project Work Flow
-
-![Alt Text](./ReadMe_Images/wf.JPG)
-
-# Executive Summary
-
-### Overview of Findings
-
-This analysis identifies puck possession, shot quality, and special teams performance as the strongest predictors of regular season success. Teams that consistently generate scoring chances across all danger levels—even low-danger opportunities—tend to perform better, emphasizing the importance of sustained offensive pressure. Additionally, special teams efficiency (penalty kill and power play success) plays a crucial role in influencing win totals. On the defensive side, limiting high-danger goals against is critical, reinforcing the impact of strong goaltending and defensive structure. These insights provide a data-driven framework for coaches to refine their strategies and optimize team performance.
-
-Winipeg Jets currently have the most wins so far this 2024/25 season. The following visualizations show why. The dashboard can be found here [Link](https://nhl-kpi-dashboard.netlify.app/)
-
-![Alt Text](./ReadMe_Images/d1.JPG)
-![Alt Text](./ReadMe_Images/d2.JPG)
-![Alt Text](./ReadMe_Images/d3.JPG)
-![Alt Text](./ReadMe_Images/d4.JPG)
-![Alt Text](./ReadMe_Images/d5.JPG)
-![Alt Text](./ReadMe_Images/d6.JPG)
-![Alt Text](./ReadMe_Images/d7.JPG)
-
-# Insights Deep Dive
-
-![Alt Text](./ReadMe_Images/Coef.png)
-![Alt Text](./ReadMe_Images/rm.JPG)
-
-### Key Positive Predictors
-
-#### 1. Low Danger Chances For (3.55)
-- This is the largest *positive* coefficient.  
-- Suggests that **generating a higher volume of low-danger scoring opportunities** still correlates with improved performance or outcomes.  
-- Implies that sustained offensive pressure, even if not always in prime scoring areas, can have a beneficial cumulative effect.
-
-#### 2. Medium Danger Goals For Percentage (2.56)
-- Highlights the **importance of converting medium-danger chances**.  
-- Teams that capitalize on these mid-quality opportunities see a significant boost in the target variable.
-
-#### 3. High Danger Goals For per 60 Minutes (2.34)
-- Emphasizes that successfully **finishing high-danger chances** is crucial.  
-- Reinforces the idea that high-quality scoring opportunities—and the ability to convert them—drive positive results.
-
-#### 4. Penalty Kill Net Percentage (1.90)
-- Strong penalty-killing performance **reduces opponents’ scoring and boosts overall team success**.  
-- Indicates the critical role of defensive special teams in achieving favorable outcomes.
-
-#### 5. Power Play Net Percentage (1.47)
-- Suggests that **efficient power-play execution** has a clear positive impact.  
-- Converting on power-play opportunities shifts momentum and contributes significantly to overall performance.
-
-#### 6. Low Danger Goals For per 60 Minutes (0.38)
-- A smaller but still positive influence.  
-- Reaffirms the notion that **even low-danger attempts that turn into goals** can tip outcomes in a team’s favor over time.
+This project was developed for [Maskin Hockey](https://maskinhockey.ca/), a hockey program dedicated to high-level junior coaching and player development.
 
 ---
 
-## Key Negative Predictor
+## **Data Structure & Initial Checks**
 
-### High Danger Goals Against per 60 Minutes (-1.95)
-- The only negative coefficient in the model.  
-- Indicates that **conceding more high-danger goals** has a detrimental effect on the target outcome.  
-- Highlights the importance of **strong defensive play and goaltending**, especially in high-threat situations.
+- **Database Documentation, Lineage Graph, Data Quality Checks, and SQL Queries:** [View Here](https://nhl-db-team-season-stats.netlify.app/#!/overview)  
+- **ETL Pipeline:** [View Here](./ETL/)  
+- **ELT Pipeline:** [View Here](/ELT/DBT/NHL_Data/)  
 
 ---
 
-## Combined Insights
-- **Offense Matters:** Large positive coefficients for **low- and medium-danger creation** and **converting high-danger chances** underscore the value of both shot volume and quality finishing.  
-- **Special Teams Are Key:** The positive impacts of **penalty kill and power play net percentages** show how pivotal special teams execution can be.  
-- **Defense/Goaltending Impact:** A negative coefficient for **high-danger goals against** reminds us that preventing quality chances against is just as important as generating them.  
-- **Intercept as a Baseline:** The high intercept suggests a strong baseline level in the model, with the other features serving as refinements or adjustments around that baseline.
+## **Project Workflow**
 
+![Project Workflow](./ReadMe_Images/wf.JPG)
 
-Exploratory data anlysis can be found [link](/Analysis/Regression_Analysis/Regular_Season_Wins_Regression_Analysis/NHL_2007_2023_Regular_Season_Wins_Regression_EDA.ipynb).
+---
 
-Multiple linear regression and k-mean cluster analysis can be found here [link](/Analysis/Regression_Analysis/Regular_Season_Wins_Regression_Analysis/NHL_2007_2023_Regular_Season_Wins_Multiple_Linear_Regression.ipynb).
+## **Executive Summary**
 
+### **Key Findings**
+The analysis reveals that **puck possession, shot quality, and special teams performance** are the strongest predictors of regular season success. 
 
-# Recommendations  
+- Teams that consistently generate **scoring chances at all danger levels**—including low-danger opportunities—tend to perform better, highlighting the value of sustained offensive pressure.  
+- **Special teams efficiency (penalty kill and power play success)** plays a crucial role in determining overall win totals.  
+- On the defensive end, **limiting high-danger goals against** is critical, emphasizing the importance of strong goaltending and structured defensive play.  
 
-### 1. **Prioritize Sustained Offensive Pressure**  
-   - Encourage teams to **generate a high volume of low-danger chances**, as sustained offensive zone time correlates with increased success.  
-   - Develop systems that maintain puck possession and allow for continuous offensive cycling, even in non-prime scoring areas.  
+### **Current Season Insights**
+As of the 2024-25 season, the **Winnipeg Jets** currently have the most wins. The visualizations below illustrate why:  
 
-### 2. **Capitalize on Medium and High-Danger Scoring Opportunities**  
-   - Focus on **efficient shot selection and finishing ability** in medium- and high-danger areas.  
-   - Implement training that emphasizes **quick puck movement in the slot and crease** to improve scoring conversion rates.  
-   - Encourage players to **drive the net and create traffic** to increase rebound opportunities.  
+- [View Dashboard](https://nhl-kpi-dashboard.netlify.app/)  
 
-### 3. **Strengthen Special Teams Execution**  
-   - **Power Play:**  
-     - Develop structured **entry plays and high-percentage shooting formations** to maximize conversion.  
-     - Encourage **quick puck rotation and net-front presence** to create optimal scoring conditions.  
-   - **Penalty Kill:**  
-     - Improve defensive positioning and **stick placement to limit passing lanes**.  
-     - Emphasize **aggressive forechecking and clearing strategies** to disrupt opponent setups.  
+![Visualization](./ReadMe_Images/d1.JPG)  
+![Visualization](./ReadMe_Images/d2.JPG)  
+![Visualization](./ReadMe_Images/d3.JPG)  
+![Visualization](./ReadMe_Images/d4.JPG)  
+![Visualization](./ReadMe_Images/d5.JPG)  
+![Visualization](./ReadMe_Images/d6.JPG)  
+![Visualization](./ReadMe_Images/d7.JPG)  
 
-### 4. **Improve Defensive Zone Coverage & Goaltending in High-Danger Areas**  
-   - Focus on defensive systems that **limit high-danger chances against**, as they have the strongest negative impact on win probability.  
-   - Implement drills that improve **defensive awareness, gap control, and net-front clearing strategies**.  
-   - Ensure goaltenders receive targeted training on **high-danger save situations**, such as cross-crease movement and lateral tracking.  
+---
 
-### 5. **Use Data-Driven Player Development**  
-   - Integrate **video analysis and analytics** into coaching strategies to assess individual and team performance in key metrics.  
-   - Identify **players who excel in generating scoring chances** and tailor their development plans accordingly.  
+## **Insights Deep Dive**
 
-### 6. **Adopt an Adaptive Coaching Approach**  
-   - Monitor **in-game performance metrics** and adjust strategies dynamically to exploit opponent weaknesses.  
-   - Develop a **mid-season review framework** using key predictors from this analysis to refine tactics and optimize line combinations.  
-  
+![Regression Coefficients](./ReadMe_Images/Coef.png)  
+![Residuals Analysis](./ReadMe_Images/rm.JPG)  
 
-# Assumptions and Caveats  
-  
-- **Junior hockey differs significantly from the NHL** in multiple ways:  
-  - **Game Length:** Junior hockey games are often shorter, meaning less total ice time for players and fewer opportunities to generate the same volume of scoring chances as in the NHL.  
-  - **Player Development:** Young players are still developing physically and may not execute at the same level as fully matured professional athletes. Skill gaps and inconsistency in execution can influence outcomes differently than in the NHL.  
-  - **Rule Differences:** Rule changes at the junior level, such as **the delayed introduction of body checking**, can affect defensive strategies and game flow compared to professional play.  
-  - **Special Teams Efficiency:** Power play and penalty kill strategies may not be as refined at the junior level due to **less experience and varying coaching philosophies**, potentially affecting their impact on game results.  
-  - **Goaltending Consistency:** Junior goalies tend to be less experienced and more prone to fluctuations in performance compared to professional counterparts, which may make certain defensive metrics less reliable in predicting outcomes.  
-  - **Roster Turnover:** Junior teams experience higher turnover rates due to age restrictions and player development pathways, which may introduce additional variability not captured in this analysis.  
+### **Key Positive Predictors**
+These metrics have the strongest positive correlation with winning:
 
-These factors should be considered when applying NHL-based insights to junior hockey, as the differences in gameplay and player development may require adjustments to coaching strategies.
+#### **1. Low-Danger Chances For (+3.55)**
+- The largest *positive* coefficient in the model.  
+- Suggests that **generating a high volume of low-danger scoring opportunities** correlates with increased success.  
+- Highlights the importance of sustained offensive pressure, even outside prime scoring areas.
+
+#### **2. Medium-Danger Goals For Percentage (+2.56)**
+- Reinforces the value of **converting medium-danger chances** into goals.  
+- Teams that capitalize on these opportunities see a significant boost in wins.
+
+#### **3. High-Danger Goals For per 60 Minutes (+2.34)**
+- Successfully **finishing high-danger chances** is crucial.  
+- This metric underscores the importance of high-quality shot creation and finishing ability.
+
+#### **4. Penalty Kill Net Percentage (+1.90)**
+- A strong penalty kill **reduces opponent scoring and improves overall team success**.  
+- This highlights the impact of defensive special teams.
+
+#### **5. Power Play Net Percentage (+1.47)**
+- **Efficient power-play execution** directly contributes to more wins.  
+- Teams that capitalize on man-advantage situations gain a strategic edge.
+
+#### **6. Low-Danger Goals For per 60 Minutes (+0.38)**
+- While a smaller coefficient, it reinforces that **even low-danger goals contribute positively over time**.
+
+---
+
+### **Key Negative Predictor**
+#### **High-Danger Goals Against per 60 Minutes (-1.95)**
+- The only *negative* coefficient in the model.  
+- Suggests that **allowing more high-danger goals significantly reduces win probability**.  
+- Highlights the importance of **strong defensive play and goaltending**.
+
+---
+
+## **Exploratory Data Analysis**
+- [Regular Season Wins EDA](./Analysis/Regression_Analysis/NHL_2007_2023_Regular_Season_Wins_Regression_EDA.ipynb)  
+- [Multiple Linear Regression & K-Means Clustering](./Analysis/Regression_Analysis/NHL_2007_2023_Regular_Season_Wins_Multiple_Linear_Regression.ipynb)  
+
+---
+
+## **Recommendations**
+
+### **1. Prioritize Sustained Offensive Pressure**  
+- Encourage teams to **generate a high volume of low-danger chances**.  
+- Implement strategies to **maintain puck possession and offensive zone time**.  
+
+### **2. Maximize Conversion of Medium & High-Danger Chances**  
+- Train players to **capitalize on medium- and high-danger scoring areas**.  
+- Implement systems that emphasize **quick puck movement in high-traffic zones**.  
+
+### **3. Improve Special Teams Execution**  
+#### **Power Play**  
+- Focus on **structured plays and high-percentage shooting formations**.  
+- Increase **net-front presence and quick puck rotation**.  
+#### **Penalty Kill**  
+- Improve **defensive positioning and aggressive forechecking**.  
+- Disrupt opponent setups with **efficient clearing strategies**.  
+
+### **4. Strengthen Defensive Zone Play & Goaltending**  
+- Emphasize **limiting high-danger shots against** through defensive structure.  
+- Train goaltenders to excel in **high-threat situations**.  
+
+### **5. Implement Data-Driven Player Development**  
+- Use **video analysis and analytics** to track individual performance.  
+- Adjust training programs based on **player strengths and weaknesses**.  
+
+### **6. Adaptive Coaching Strategies**  
+- Monitor **in-game analytics** and adjust strategies dynamically.  
+- Conduct **mid-season performance reviews** to refine tactics and optimize player usage.  
+
+---
+
+## **Assumptions & Caveats**  
+- **Junior hockey differs from the NHL** in game structure, skill level, and special teams execution.  
+- **Rule variations** (e.g., body checking rules) may impact the effectiveness of some strategies.  
+- **Higher roster turnover** in junior hockey introduces additional variability.  
+
+These factors should be considered when applying NHL-based insights to junior-level coaching.  
+
+---
+
+### **Final Thoughts**
+This analysis provides a **data-driven framework** for improving team performance by identifying the strongest predictors of regular season success. By leveraging these insights, junior hockey coaches can refine their **game strategies, player development programs, and special teams execution** to create a more competitive team environment.  
+
+🚀 *Data-driven hockey coaching starts here.*
