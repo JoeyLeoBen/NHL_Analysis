@@ -19,7 +19,7 @@ This analysis is designed for coaches in the GTA junior hockey community, partic
 
 - The nhldb database documentation, database lineage graph, data quality checks, and SQL queries can viewed here [Link](https://nhl-db-team-season-stats.netlify.app/#!/overview)
 - ETL Pipline can be viewed here [Link](./ETL/)
-- ELT Pipline can be viewed here [Link](./ELT/)
+- ELT Pipline can be viewed here [Link](/ELT/DBT/NHL_Data/)
 
 # Project Work Flow
 
