@@ -30,7 +30,7 @@ This analysis is designed for coaches in the GTA junior hockey community, partic
 
 # Project Work Flow
 
-![Alt Text](./ReadMe_Images/wf.jpg)
+![Alt Text](./ReadMe_Images/wf.JPG)
 
 # Executive Summary
 
@@ -51,7 +51,7 @@ Winipeg Jets currently have the most wins so far this 2024/25 season. The follow
 # Insights Deep Dive
 
 ![Alt Text](./ReadMe_Images/Coef.png)
-![Alt Text](./ReadMe_Images/rm.JPG.png)
+![Alt Text](./ReadMe_Images/rm.JPG)
 
 ### Key Positive Predictors
 
