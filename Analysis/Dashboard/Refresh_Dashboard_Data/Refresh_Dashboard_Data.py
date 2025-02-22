@@ -453,6 +453,8 @@ def pull_dashboard_views(password: str = DB_PASSWORD) -> None:
         "penalty_kill_net_pct",
         "power_play_net_pct",
         "low_danger_goals_for_per_60_minutes",
+        "high_danger_shots_for",
+        "save_pct",
     ]
 
     for col in columns_variance:
@@ -469,6 +471,8 @@ def pull_dashboard_views(password: str = DB_PASSWORD) -> None:
         "penalty_kill_net_pct",
         "power_play_net_pct",
         "low_danger_goals_for_per_60_minutes",
+        "high_danger_shots_for",
+        "save_pct",
     ]
 
     # Melt the DataFrame fro dashboard filtering
@@ -504,6 +508,8 @@ def pull_dashboard_views(password: str = DB_PASSWORD) -> None:
         "penalty_kill_net_pct",
         "power_play_net_pct",
         "low_danger_goals_for_per_60_minutes",
+        "high_danger_shots_for",
+        "save_pct",
     ]
 
     # Melt the DataFrame for dashboard filtering

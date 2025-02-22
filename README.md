@@ -42,11 +42,11 @@ This project was developed for [Maskin Hockey](https://maskinhockey.ca/), a hock
 ## **Executive Summary**
 
 ### **Key Findings**
-The analysis reveals that **puck possession, shot quality, and special teams performance** are the strongest predictors of regular season success. 
+The analysis reveals that **Shots in Prime scoring areas, save percentage, and special teams performance** are the strongest predictors of regular season success. 
 
-- Teams that consistently generate **scoring chances at all danger levels**—including low-danger opportunities—tend to perform better, highlighting the value of sustained offensive pressure.  
+- Teams that generate **scoring chances in high danger levels** tend to perform better, highlighting the value of offensive pressure in prime scoring areas. 
 - **Special teams efficiency (penalty kill and power play success)** plays a crucial role in determining overall win totals.  
-- On the defensive end, **limiting high-danger goals against** is critical, emphasizing the importance of strong goaltending and structured defensive play.  
+- On the defensive end, **save percentage** is critical, emphasizing the importance of strong goaltending and structured defensive play.  
 
 ### **Current Season Insights**
 As of the 2024-25 season, the **Winnipeg Jets** currently have the most wins. The visualizations below illustrate why:  
@@ -56,10 +56,7 @@ As of the 2024-25 season, the **Winnipeg Jets** currently have the most wins. Th
 ![Visualization](./ReadMe_Images/d1.JPG)  
 ![Visualization](./ReadMe_Images/d2.JPG)  
 ![Visualization](./ReadMe_Images/d3.JPG)  
-![Visualization](./ReadMe_Images/d4.JPG)  
-![Visualization](./ReadMe_Images/d5.JPG)  
-![Visualization](./ReadMe_Images/d6.JPG)  
-![Visualization](./ReadMe_Images/d7.JPG)  
+![Visualization](./ReadMe_Images/d4.JPG)
 
 ---
 
@@ -71,37 +68,23 @@ As of the 2024-25 season, the **Winnipeg Jets** currently have the most wins. Th
 ### **Key Positive Predictors**
 These metrics have the strongest positive correlation with winning:
 
-#### **1. Low-Danger Chances For (+3.55)**
+#### **1. High-Danger Shots For (+4.65)**
 - The largest *positive* coefficient in the model.  
-- Suggests that **generating a high volume of low-danger scoring opportunities** correlates with increased success.  
-- Highlights the importance of sustained offensive pressure, even outside prime scoring areas.
+- Suggests that **generating a high volume of high-danger scoring opportunities** correlates with increased success.  
+- Highlights the importance of sustained offensive pressure, inside prime scoring areas.
 
-#### **2. Medium-Danger Goals For Percentage (+2.56)**
-- Reinforces the value of **converting medium-danger chances** into goals.  
-- Teams that capitalize on these opportunities see a significant boost in wins.
+#### **2. Power Play Net Percentage (+2.57)**
+- **Efficient power-play execution** directly contributes to more wins.  
+- Teams that capitalize on man-advantage situations gain a strategic edge
 
-#### **3. High-Danger Goals For per 60 Minutes (+2.34)**
-- Successfully **finishing high-danger chances** is crucial.  
-- This metric underscores the importance of high-quality shot creation and finishing ability.
+#### **3. Save Percentage (+2.56)**
+- Reinforces the value of **defense** as expressed through **save percentage**.  
+- Teams that have higher save percentages, and see a boost in wins. This emphasizes the importance of strong goaltending and structured defensive play.
+-
 
-#### **4. Penalty Kill Net Percentage (+1.90)**
+#### **4. Penalty Kill Net Percentage (+2.24)**
 - A strong penalty kill **reduces opponent scoring and improves overall team success**.  
 - This highlights the impact of defensive special teams.
-
-#### **5. Power Play Net Percentage (+1.47)**
-- **Efficient power-play execution** directly contributes to more wins.  
-- Teams that capitalize on man-advantage situations gain a strategic edge.
-
-#### **6. Low-Danger Goals For per 60 Minutes (+0.38)**
-- While a smaller coefficient, it reinforces that **even low-danger goals contribute positively over time**.
-
----
-
-### **Key Negative Predictor**
-#### **High-Danger Goals Against per 60 Minutes (-1.95)**
-- The only *negative* coefficient in the model.  
-- Suggests that **allowing more high-danger goals significantly reduces win probability**.  
-- Highlights the importance of **strong defensive play and goaltending**.
 
 ---
 
@@ -113,15 +96,11 @@ These metrics have the strongest positive correlation with winning:
 
 ## **Recommendations**
 
-### **1. Prioritize Sustained Offensive Pressure**  
-- Encourage teams to **generate a high volume of low-danger chances**.  
-- Implement strategies to **maintain puck possession and offensive zone time**.  
+### **1. Prioritize Offensive Pressure in high-Danger Scoring Areas**  
+- Encourage teams to **generate a high volume of high-danger shooting chances**.  
+- Implement strategies to **maintain puck possession and offensive zone time**.
 
-### **2. Maximize Conversion of Medium & High-Danger Chances**  
-- Train players to **capitalize on medium- and high-danger scoring areas**.  
-- Implement systems that emphasize **quick puck movement in high-traffic zones**.  
-
-### **3. Improve Special Teams Execution**  
+### **2. Improve Special Teams Execution**  
 #### **Power Play**  
 - Focus on **structured plays and high-percentage shooting formations**.  
 - Increase **net-front presence and quick puck rotation**.  
@@ -129,17 +108,17 @@ These metrics have the strongest positive correlation with winning:
 - Improve **defensive positioning and aggressive forechecking**.  
 - Disrupt opponent setups with **efficient clearing strategies**.  
 
-### **4. Strengthen Defensive Zone Play & Goaltending**  
-- Emphasize **limiting high-danger shots against** through defensive structure.  
+### **3. Strengthen Defensive Zone Play & Goaltending**  
+- Emphasize **limiting high-danger shots against** and increasing **save %** through defensive structure.  
 - Train goaltenders to excel in **high-threat situations**.  
 
-### **5. Implement Data-Driven Player Development**  
+### **4. Implement Data-Driven Player Development**  
 - Use **video analysis and analytics** to track individual performance.  
 - Adjust training programs based on **player strengths and weaknesses**.  
 
 ### **6. Adaptive Coaching Strategies**  
 - Monitor **in-game analytics** and adjust strategies dynamically.  
-- Conduct **mid-season performance reviews** to refine tactics and optimize player usage.  
+- Conduct **mid-season performance reviews** to refine tactics and optimize player usage.
 
 ---
 
