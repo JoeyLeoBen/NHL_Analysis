@@ -42,7 +42,7 @@ This project was developed for [Maskin Hockey](https://maskinhockey.ca/), a hock
 ## **Executive Summary**
 
 ### **Key Findings**
-The analysis reveals that **Shots in Prime scoring areas, save percentage, and special teams performance** are the strongest predictors of regular season success. 
+The analysis reveals that **shots in prime scoring areas, save percentage, and special teams performance** are the strongest predictors of regular season success. 
 
 - Teams that generate **scoring chances in high danger levels** tend to perform better, highlighting the value of offensive pressure in prime scoring areas. 
 - **Special teams efficiency (penalty kill and power play success)** plays a crucial role in determining overall win totals.  
