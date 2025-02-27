@@ -66,7 +66,7 @@ As of the 2024-25 season, the **Winnipeg Jets** currently have the most wins. Th
 ![Residuals Analysis](./ReadMe_Images/rm.JPG)  
 
 ### **Key Positive Predictors**
-These metrics have the strongest positive correlation with winning:
+The following metrics, which serve as independent variables, account for 64% of the variance in the dependent variable (wins).
 
 #### **1. High-Danger Shots For (+4.65)**
 - The largest *positive* coefficient in the model.  
