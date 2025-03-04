@@ -41,11 +41,10 @@ class Metrics:
             print(f"{label:{35}} {value:.>{20}}")
 
         return None
-    
 
     @staticmethod
     def regression_cross_val_shuffle(
-        regressor: any, X_train: pd.DataFrame, y_train: pd.Series, cv: any, font: int
+        regressor: any, X_train: pd.DataFrame, y_train: pd.Series, cv: int, font: int
     ) -> None:
         """
         Performs k-fold cross-validation (with shuffling) for a regressor using various scoring metrics,
@@ -101,7 +100,7 @@ class Metrics:
             estimator=regressor,
             X=X_train,
             y=y_train,
-            cv=10,
+            cv=cv,
             n_jobs=-1,
             scoring="neg_root_mean_squared_error",
         )
@@ -189,7 +188,6 @@ class Metrics:
         print("\n")
 
         return None
-    
 
     @staticmethod
     def regression_cross_val_splits(
@@ -329,7 +327,6 @@ class Metrics:
         print("\n")
 
         return None
-    
 
     @staticmethod
     def regression_feature_importance(
@@ -395,7 +392,6 @@ class Metrics:
         display(coefficients_df)
 
         return None
-    
 
     @staticmethod
     def residual_means_counts_plot(
@@ -488,7 +484,6 @@ class Metrics:
         plt.show()
 
         return None
-    
 
     @staticmethod
     def class_cat_bivariate(
@@ -531,7 +526,6 @@ class Metrics:
             display(label3)
 
         return None
-    
 
     @staticmethod
     def calculate_vif(
@@ -593,9 +587,8 @@ class Metrics:
         if print_markdown.lower() == "yes":
             for mark in markdown:
                 print(mark)
-                
+
         return (feature_list, feature_vif_list)
-    
 
     @staticmethod
     def crosstabs(col_left: str, col_top: str, df: pd.DataFrame) -> pd.DataFrame:
@@ -648,7 +641,6 @@ class Metrics:
         crosstab["."] = ""
 
         return crosstab
-    
 
     @staticmethod
     def crosstab_report(df: pd.DataFrame, drop_cols: list[str]) -> pd.DataFrame:
