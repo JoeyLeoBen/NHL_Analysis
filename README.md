@@ -13,6 +13,7 @@ By analyzing data sourced via the [NHL API](https://github.com/Zmalski/NHL-API-R
 - [Project Workflow](#project-workflow)
 - [Executive Summary](#executive-summary)
 - [Insights Deep Dive](#insights-deep-dive)
+- [Data Analysis Jupyter Notebooks](#Data-Analysis-Jupyter-Notebooks)
 - [Recommendations](#recommendations)
 - [Assumptions and Caveats](#assumptions-and-caveats)
 
@@ -88,7 +89,7 @@ The following metrics, which serve as independent variables, account for 64% of 
 
 ---
 
-## **Exploratory Data Analysis**
+## **Data Analysis Jupyter Notebooks**
 - [Regular Season Wins EDA](./Analysis/Regression_Analysis/NHL_2007_2023_Regular_Season_Wins_Regression_EDA.ipynb)  
 - [Multiple Linear Regression & K-Means Clustering](./Analysis/Regression_Analysis/NHL_2007_2023_Regular_Season_Wins_Multiple_Linear_Regression.ipynb)  
 
