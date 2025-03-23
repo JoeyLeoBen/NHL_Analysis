@@ -71,7 +71,7 @@ There is no predictive relationship between NHL team metrics and the number of t
 #### Alternative Hypothesis (H₁)
 There is a predictive relationship between NHL team metrics and team wins, meaning that team metrics have a significant impact on predicting the number of wins a team could achieve during the regular season.
 
-#### Experiment Results:
+#### Experiment Results
 We reject H₀ (null hypothesis) as the rgression model has proven that there is a moderate predictive relationship between NHL team metrics and the number of team wins during the regular season.
 
 ![Regression Coefficients](./ReadMe_Images/Coef.png)  
