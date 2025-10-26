@@ -3,7 +3,7 @@
 ## **Overview**
 This project leverages multiple linear regression to predict NHL regular season wins based on team metrics collected from 2007 to 2023. The goal is to identify the key performance indicators that contribute most significantly to winning games throughout the regular season. 
 
-By analyzing data sourced via the [NHL API](https://github.com/Zmalski/NHL-API-Reference) and web scraping from [naturalstattrick.com](https://www.naturalstattrick.com/glossary.php?teams#), this project not only highlights the strongest predictors of success but also provides actionable insights—particularly for junior hockey coaches looking to implement data-driven strategies to enhance team performance.
+By analyzing data sourced via the [NHL API](https://github.com/Zmalski/NHL-API-Reference) and web scraping from [naturalstattrick.com](https://www.naturalstattrick.com/glossary.php?teams#), this project highlights the strongest predictors of success in addition to actionable insights to support hockey analysts.
 
 ---
 
@@ -20,9 +20,7 @@ By analyzing data sourced via the [NHL API](https://github.com/Zmalski/NHL-API-R
 ---
 
 ## **Project Background**
-This analysis is tailored for coaches in the GTA junior hockey community, particularly those working with players aged 10 to 16. It provides insights into improving regular season performance by identifying key metrics that drive winning outcomes. By leveraging these findings, coaches and instructors can refine their training methodologies and in-game strategies to optimize team success.
-
-This project was developed for [Maskin Hockey](https://maskinhockey.ca/), a hockey program dedicated to high-level junior coaching and player development.
+This analysis is tailored for hockey analysts. It provides insights into improving regular season performance by identifying key metrics that drive winning outcomes. By leveraging these findings, analysts will have key metrics to benchmark against when determining how a team is preforming.
 
 ---
 
@@ -66,13 +64,13 @@ As of the 2024-25 season, the **Winnipeg Jets** currently have the most wins. Th
 ### Hypothesis
 
 #### Null Hypothesis (H₀)
-There is no predictive relationship between NHL team metrics and the number of team wins during the regular season.
+There is no predictive relationship between the chosen NHL team metrics and the number of team wins during the regular season.
 
 #### Alternative Hypothesis (H₁)
-There is a predictive relationship between NHL team metrics and team wins, meaning that team metrics have a significant impact on predicting the number of wins a team could achieve during the regular season.
+There is a predictive relationship between the chosen NHL team metrics and team wins, meaning that team metrics have an impact on predicting the number of wins a team could achieve during the regular season.
 
 #### Experiment Results
-We reject H₀ (null hypothesis) as the rgression model has proven that there is a moderate predictive relationship between NHL team metrics and the number of team wins during the regular season.
+We reject H₀ (null hypothesis) as the rgression model has proven that there is a moderate predictive relationship between the chosen NHL team metrics and the number of team wins during the regular season.
 
 ![Regression Coefficients](./ReadMe_Images/Coef.png)  
 ![Residuals Analysis](./ReadMe_Images/rm.JPG)  
@@ -108,7 +106,10 @@ The following metrics, which serve as independent variables, account for 64% of 
 
 ## **Recommendations**
 
-### **1. Prioritize Offensive Pressure in high-Danger Scoring Areas**  
+### **1. Build in game stratagies with the key indicators (KPIs)**
+- Using key indicators create a basis for analysts to base their strategy around. 
+
+### **2. Prioritize Offensive Pressure in high-Danger Scoring Areas**  
 - Encourage teams to **generate a high volume of high-danger shooting chances**.  
 - Implement strategies to **maintain puck possession and offensive zone time**.
 
@@ -122,28 +123,19 @@ The following metrics, which serve as independent variables, account for 64% of 
 
 ### **3. Strengthen Defensive Zone Play & Goaltending**  
 - Emphasize **limiting high-danger shots against** and increasing **save %** through defensive structure.  
+- Encourage shot blocking in the defensive zone.
 - Train goaltenders to excel in **high-threat situations**.  
 
-### **4. Implement Data-Driven Player Development**  
-- Use **video analysis and analytics** to track individual performance.  
-- Adjust training programs based on **player strengths and weaknesses**.  
-
-### **6. Adaptive Coaching Strategies**  
+### **4. Adaptive Coaching Strategies**  
 - Monitor **in-game analytics** and adjust strategies dynamically.  
 - Conduct **mid-season performance reviews** to refine tactics and optimize player usage.
 
 ---
 
 ## **Assumptions & Caveats**  
-- **Junior hockey differs from the NHL** in game structure, skill level, and special teams execution.  
-- **Rule variations** (e.g., body checking rules) may impact the effectiveness of some strategies.  
-- **Higher roster turnover** in junior hockey introduces additional variability.  
-
-These factors should be considered when applying NHL-based insights to junior-level coaching.  
+The above reccomendations have not been tested are assumed stratagies that may support the the key indicators and/or KPIs in predicting wins.This assumption  should be considered when applying the reccomendations.  
 
 ---
 
 ### **Final Thoughts**
-This analysis provides a **data-driven framework** for improving team performance by identifying the strongest predictors of regular season success. By leveraging these insights, junior hockey coaches can refine their **game strategies, player development programs, and special teams execution** to create a more competitive team environment.  
-
-🚀 *Data-driven hockey coaching starts here.*
+This analysis provides a **data-driven framework** for improving team performance by identifying the strongest predictors of regular season success. By leveraging these insights, hockey analysts can refine their **game strategies, player development programs, and special teams execution** to create a more competitive team environment.
