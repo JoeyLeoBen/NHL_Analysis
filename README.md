@@ -100,7 +100,7 @@ The following metrics, which serve as independent variables, account for 64% of 
 
 ## **Data Analysis Jupyter Notebooks**
 - [Regular Season Wins EDA](./Analysis/Regression_Analysis/NHL_2007_2023_Regular_Season_Wins_Regression_EDA.ipynb)  
-- [Multiple Linear Regression & K-Means Clustering](./Analysis/Regression_Analysis/NHL_2007_2023_Regular_Season_Wins_Multiple_Linear_Regression.ipynb)  
+- [Multiple Linear Regression & K-Means Clustering](.Analysis/Regression_Analysis/Regular_Season_Wins_Regression_Analysis/NHL_2007_2023_Regular_Season_Wins_Multiple_Linear_Regression.ipynb)  
 
 ---
 
