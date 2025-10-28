@@ -9,7 +9,7 @@ By analyzing data sourced via the [NHL API](https://github.com/Zmalski/NHL-API-R
 
 ## **Table of Contents**
 - [Project Background](#project-background)
-- [Data Structure and Initial Checks](#data-structure--initial-checks)
+- [Data Structure and Initial Checks](#data-structure-and-initial-checks)
 - [Project Workflow](#project-workflow)
 - [Executive Summary](#executive-summary)
 - [Insights Deep Dive](#insights-deep-dive)
