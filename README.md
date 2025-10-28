@@ -41,14 +41,14 @@ This analysis is tailored for hockey analysts. It provides insights into improvi
 ## **Executive Summary**
 
 ### **Key Findings**
-The analysis reveals that **shots in prime scoring areas, save percentage, and special teams performance** are the strongest predictors of regular season success. 
+The analysis reveals that shots in prime scoring areas, save percentage, and special teams performance are the strongest predictors of regular season success. 
 
-- Teams that generate **scoring chances in high danger levels** tend to perform better, highlighting the value of offensive pressure in prime scoring areas. 
-- **Special teams efficiency (penalty kill and power play success)** plays a crucial role in determining overall win totals.  
-- On the defensive end, **save percentage** is critical, emphasizing the importance of strong goaltending and structured defensive play.  
+- Teams that generate scoring chances in high danger levels tend to perform better, highlighting the value of offensive pressure in prime scoring areas. 
+- Special teams efficiency (penalty kill and power play success) plays a crucial role in determining overall win totals.  
+- On the defensive end, save percentage is critical, emphasizing the importance of strong goaltending and structured defensive play.  
 
 ### **Current Season Insights**
-As of the 2024-25 season, the **Winnipeg Jets** currently have the most wins. The visualizations below illustrate why:  
+As of the 2024-25 season, the Winnipeg Jets currently have the most wins. The visualizations below illustrate why:  
 
 - [View Dashboard](https://nhl-kpi-dashboard.netlify.app/)  
 
@@ -80,20 +80,20 @@ The following metrics, which serve as independent variables, account for 64% of 
 
 #### **1. High-Danger Shots For (+4.65)**
 - The largest *positive* coefficient in the model.  
-- Suggests that **generating a high volume of high-danger scoring opportunities** correlates with increased success.  
+- Suggests that generating a high volume of high-danger scoring opportunities correlates with increased success.  
 - Highlights the importance of sustained offensive pressure, inside prime scoring areas.
 
 #### **2. Power Play Net Percentage (+2.57)**
-- **Efficient power-play execution** directly contributes to more wins.  
+- Efficient power-play execution directly contributes to more wins.  
 - Teams that capitalize on man-advantage situations gain a strategic edge
 
 #### **3. Save Percentage (+2.56)**
-- Reinforces the value of **defense** as expressed through **save percentage**.  
+- Reinforces the value of defense as expressed through save percentage.  
 - Teams that have higher save percentages, and see a boost in wins. This emphasizes the importance of strong goaltending and structured defensive play.
 -
 
 #### **4. Penalty Kill Net Percentage (+2.24)**
-- A strong penalty kill **reduces opponent scoring and improves overall team success**.  
+- A strong penalty kill reduces opponent scoring and improves overall team success.  
 - This highlights the impact of defensive special teams.
 
 ---
@@ -110,25 +110,25 @@ The following metrics, which serve as independent variables, account for 64% of 
 - Using key indicators create a basis for analysts to base their strategy around. 
 
 ### **3. Prioritize Offensive Pressure in high-Danger Scoring Areas**  
-- Encourage teams to **generate a high volume of high-danger shooting chances**.  
-- Implement strategies to **maintain puck possession and offensive zone time**.
+- Encourage teams to generate a high volume of high-danger shooting chances.  
+- Implement strategies to maintain puck possession and offensive zone time.
 
 ### **4. Improve Special Teams Execution**  
 #### **Power Play**  
-- Focus on **structured plays and high-percentage shooting formations**.  
-- Increase **net-front presence and quick puck rotation**.  
+- Focus on structured plays and high-percentage shooting formations.  
+- Increase net-front presence and quick puck rotation.  
 #### **Penalty Kill**  
-- Improve **defensive positioning and aggressive forechecking**.  
-- Disrupt opponent setups with **efficient clearing strategies**.  
+- Improve defensive positioning and aggressive forechecking**.  
+- Disrupt opponent setups with efficient clearing strategies.  
 
 ### **5. Strengthen Defensive Zone Play and Goaltending**  
-- Emphasize **limiting high-danger shots against** and increasing **save %** through defensive structure.  
+- Emphasize limiting high-danger shots against and increasing save % through defensive structure.  
 - Encourage shot blocking in the defensive zone.
-- Train goaltenders to excel in **high-threat situations**.  
+- Train goaltenders to excel in high-threat situations.  
 
 ### **6. Adaptive Coaching Strategies**  
-- Monitor **in-game analytics** and adjust strategies dynamically.  
-- Conduct **mid-season performance reviews** to refine tactics and optimize player usage.
+- Monitor in-game analytics and adjust strategies dynamically.  
+- Conduct mid-season performance reviews to refine tactics and optimize player usage.
 
 ---
 
@@ -138,4 +138,4 @@ The above reccomendations have not been tested are assumed stratagies that may s
 ---
 
 ### **Final Thoughts**
-This analysis provides a **data-driven framework** for improving team performance by identifying the strongest predictors of regular season success. By leveraging these insights, hockey analysts can refine their **game strategies, player development programs, and special teams execution** to create a more competitive team environment.
+This analysis provides a data-driven framework for improving team performance by identifying the strongest predictors of regular season success. By leveraging these insights, hockey analysts can refine their game strategies, player development programs, and special teams execution to create a more competitive team environment.
