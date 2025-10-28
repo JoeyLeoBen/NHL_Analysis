@@ -9,13 +9,13 @@ By analyzing data sourced via the [NHL API](https://github.com/Zmalski/NHL-API-R
 
 ## **Table of Contents**
 - [Project Background](#project-background)
-- [Data Structure & Initial Checks](#data-structure--initial-checks)
+- [Data Structure and Initial Checks](#data-structure--initial-checks)
 - [Project Workflow](#project-workflow)
 - [Executive Summary](#executive-summary)
 - [Insights Deep Dive](#insights-deep-dive)
 - [Data Analysis Jupyter Notebooks](#Data-Analysis-Jupyter-Notebooks)
-- [Recommendations](#recommendations)
-- [Assumptions and Caveats](#assumptions--caveats)
+- [Recommendations and nest Steps](#recommendations-and-next-steps)
+- [Assumptions and Caveats](#assumptions-and-caveats)
 
 ---
 
@@ -24,7 +24,7 @@ This analysis is tailored for hockey analysts. It provides insights into improvi
 
 ---
 
-## **Data Structure & Initial Checks**
+## **Data Structure and Initial Checks**
 
 - **Database Documentation, Lineage Graph, Data Quality Checks, and SQL Queries:** [View Here](https://nhl-db-documentation.netlify.app/#!/overview)  
 - **ETL Pipeline:** [View Here](./ETL/)  
@@ -100,20 +100,20 @@ The following metrics, which serve as independent variables, account for 64% of 
 
 ## **Data Analysis Jupyter Notebooks**
 - [Regular Season Wins EDA](/Analysis/Regression_Analysis/Regular_Season_Wins_Regression_Analysis/NHL_2007_2023_Regular_Season_Wins_Regression_EDA.ipynb)  
-- [Multiple Linear Regression & K-Means Clustering](/Analysis/Regression_Analysis/Regular_Season_Wins_Regression_Analysis/NHL_2007_2023_Regular_Season_Wins_Multiple_Linear_Regression.ipynb)  
+- [Multiple Linear Regression and K-Means Clustering](/Analysis/Regression_Analysis/Regular_Season_Wins_Regression_Analysis/NHL_2007_2023_Regular_Season_Wins_Multiple_Linear_Regression.ipynb)  
 
 ---
 
-## **Recommendations**
+## **Recommendations and Next Steps**
 
 ### **1. Build in game stratagies with the key indicators (KPIs)**
 - Using key indicators create a basis for analysts to base their strategy around. 
 
-### **2. Prioritize Offensive Pressure in high-Danger Scoring Areas**  
+### **3. Prioritize Offensive Pressure in high-Danger Scoring Areas**  
 - Encourage teams to **generate a high volume of high-danger shooting chances**.  
 - Implement strategies to **maintain puck possession and offensive zone time**.
 
-### **2. Improve Special Teams Execution**  
+### **4. Improve Special Teams Execution**  
 #### **Power Play**  
 - Focus on **structured plays and high-percentage shooting formations**.  
 - Increase **net-front presence and quick puck rotation**.  
@@ -121,18 +121,18 @@ The following metrics, which serve as independent variables, account for 64% of 
 - Improve **defensive positioning and aggressive forechecking**.  
 - Disrupt opponent setups with **efficient clearing strategies**.  
 
-### **3. Strengthen Defensive Zone Play & Goaltending**  
+### **5. Strengthen Defensive Zone Play and Goaltending**  
 - Emphasize **limiting high-danger shots against** and increasing **save %** through defensive structure.  
 - Encourage shot blocking in the defensive zone.
 - Train goaltenders to excel in **high-threat situations**.  
 
-### **4. Adaptive Coaching Strategies**  
+### **6. Adaptive Coaching Strategies**  
 - Monitor **in-game analytics** and adjust strategies dynamically.  
 - Conduct **mid-season performance reviews** to refine tactics and optimize player usage.
 
 ---
 
-## **Assumptions & Caveats**  
+## **Assumptions and Caveats**  
 The above reccomendations have not been tested are assumed stratagies that may support the the key indicators and/or KPIs in predicting wins.This assumption  should be considered when applying the reccomendations.  
 
 ---
