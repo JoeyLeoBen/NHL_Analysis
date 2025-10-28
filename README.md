@@ -15,7 +15,7 @@ By analyzing data sourced via the [NHL API](https://github.com/Zmalski/NHL-API-R
 - [Insights Deep Dive](#insights-deep-dive)
 - [Data Analysis Jupyter Notebooks](#Data-Analysis-Jupyter-Notebooks)
 - [Recommendations](#recommendations)
-- [Assumptions and Caveats](#Assumptions-&-Caveats)
+- [Assumptions and Caveats](#assumptions-&-caveats)
 
 ---
 
